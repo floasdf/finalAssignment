@@ -126,6 +126,10 @@ fars_summarize_years <- function(years) {
 #' \dontrun{fars_map_state(01 , 2013)}
 #' \dontrun{fars_map_state(01 , 2014)}
 #' \dontrun{fars_map_state(02 , 2014)}
+#' @import dplyr
+#' @import readr
+#' @import tidyr
+#' @import maps
 #' @export
 
 fars_map_state <- function(state.num, year) {
