@@ -1,5 +1,4 @@
-install.packages("testthat")
-require(testthat)
+
 
 test_that("makefilename",{
   year <- 2017

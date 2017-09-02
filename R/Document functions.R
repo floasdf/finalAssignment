@@ -1,3 +1,5 @@
+require(testthat)
+
 #' "fars_read" 
 #'
 #' This is a function that loads a csv file (specified using the \code{filename} argument) and returns it as tibble.
