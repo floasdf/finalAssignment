@@ -23,6 +23,6 @@ This function combines the \link{fars_read} and \link{make_filename} function. T
 If for an element of the \code{years} argument no file is found a warning occurs.
 }
 \examples{
-myData <- fars_read_years(c(2013,2014))
-myData <- fars_read_years(2014)
+\dontrun{myData <- fars_read_years(c(2013,2014))}
+\dontrun{myData <- fars_read_years(2014)}
 }

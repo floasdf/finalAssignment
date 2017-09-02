@@ -12,8 +12,8 @@
 #' @note If the \code{filename} argument does not represent a file an error occurs.
 #' 
 #' @examples
-#' myData <- fars_read("accident_2013.csv")
-#' myData <- fars_read("accident_2014.csv")
+#' \dontrun{ mydata <- fars_read("accident_2013.csv")}
+#' \dontrun{myData <- fars_read("accident_2014.csv")}
 #' @export
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -37,8 +37,8 @@ fars_read <- function(filename) {
 #' @note If the \code{year} argument is not a numerical vector the generated filename probobly do not exist.
 #' 
 #' @examples
-#' make_filename(2013)
-#' make_filename(2014)
+#' \dontrun{ make_filename(2013)}
+#' \dontrun{make_filename(2014)}
 #' @export
 make_filename <- function(year) {
   year <- as.integer(year)
@@ -59,8 +59,8 @@ make_filename <- function(year) {
 #' @note If for an element of the \code{years} argument no file is found a warning occurs.
 #' 
 #' @examples
-#' myData <- fars_read_years(c(2013,2014))
-#' myData <- fars_read_years(2014)
+#' \dontrun{myData <- fars_read_years(c(2013,2014))}
+#' \dontrun{myData <- fars_read_years(2014)}
 #' @export
 
 fars_read_years <- function(years) {
@@ -92,8 +92,8 @@ fars_read_years <- function(years) {
 #' @note If for an element of the \code{years} argument no corresponding file is found a warning occurs.
 #' 
 #' @examples
-#' fars_summarize_years(2013)
-#' fars_summarize_years(c(2013,2014))
+#' \dontrun{fars_summarize_years(2013)}
+#' \dontrun{fars_summarize_years(c(2013,2014))}
 #'
 #' @export
 
@@ -121,9 +121,9 @@ fars_summarize_years <- function(years) {
 #'       If no coordinates exists for any of the accidents an error occurs.
 #' 
 #' @examples
-#' fars_map_state(01 , 2013)
-#' fars_map_state(01 , 2014)
-#' fars_map_state(02 , 2014)
+#' \dontrun{fars_map_state(01 , 2013)}
+#' \dontrun{fars_map_state(01 , 2014)}
+#' \dontrun{fars_map_state(02 , 2014)}
 #' @export
 
 fars_map_state <- function(state.num, year) {

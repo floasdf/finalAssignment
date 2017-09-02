@@ -26,7 +26,7 @@ If for the year no file exists an error occurs. If the state specifyed with \cod
       If no coordinates exists for any of the accidents an error occurs.
 }
 \examples{
-fars_map_state(01 , 2013)
-fars_map_state(01 , 2014)
-fars_map_state(02 , 2014)
+\dontrun{fars_map_state(01 , 2013)}
+\dontrun{fars_map_state(01 , 2014)}
+\dontrun{fars_map_state(02 , 2014)}
 }

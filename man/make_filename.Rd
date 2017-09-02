@@ -22,6 +22,6 @@ This function operates on strings.
 If the \code{year} argument is not a numerical vector the generated filename probobly do not exist.
 }
 \examples{
-make_filename(2013)
-make_filename(2014)
+\dontrun{ make_filename(2013)}
+\dontrun{make_filename(2014)}
 }

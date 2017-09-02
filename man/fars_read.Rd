@@ -23,6 +23,6 @@ This function is a wrapper for the \link{readr::read_csv} and \link{dplyr::tbl_d
 If the \code{filename} argument does not represent a file an error occurs.
 }
 \examples{
-myData <- fars_read("accident_2013.csv")
-myData <- fars_read("accident_2014.csv")
+\dontrun{ mydata <- fars_read("accident_2013.csv")}
+\dontrun{myData <- fars_read("accident_2014.csv")}
 }

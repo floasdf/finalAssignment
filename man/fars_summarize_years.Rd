@@ -25,7 +25,7 @@ This function is a wrapper for the \link{fars_read_years} function. The external
 If for an element of the \code{years} argument no corresponding file is found a warning occurs.
 }
 \examples{
-fars_summarize_years(2013)
-fars_summarize_years(c(2013,2014))
+\dontrun{fars_summarize_years(2013)}
+\dontrun{fars_summarize_years(c(2013,2014))}
 
 }
