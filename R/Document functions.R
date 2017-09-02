@@ -55,7 +55,7 @@ make_filename <- function(year) {
 #' 
 #' @return This function returns list for all the years specified in the \code{years} argument. Every entry of the list is a data.frame with the columns year and MONTH.
 #'
-#' @details This function combines the \link{fars_read} and \link{make_filename} function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::tbl_df} and \link{readr::read_csv} are included.
+#' @details This function combines the fars_read and make_filename function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::tbl_df} and \link{readr::read_csv} are included.
 #'          Therefore the dplyr and readr package has to be installed and loaded.
 #' 
 #' @note If for an element of the \code{years} argument no file is found a warning occurs.
@@ -87,7 +87,7 @@ fars_read_years <- function(years) {
 #' fars_summarize_years
 #' @return This function returns a tibble which contains in the first collumn the month and in the following columns for every year in \code{years} the number of accidents. for all the years specified in the \code{years} argument. Every entry of the list is a data.frame with the columns year and MONTH.
 #'
-#' @details This function is a wrapper for the \link{fars_read_years} function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::group_by}, \link{dplyr::bind_rows},
+#' @details This function is a wrapper for the fars_read_years function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::group_by}, \link{dplyr::bind_rows},
 #'           \link{dplyr::summarize}, \link{tidyr::spread} \link{dplyr::tbl_df} and \link{readr::read_csv} are included.
 #'          Therefore the dplyr , tidyr and readr package has to be installed and loaded.
 #' 
