@@ -1,3 +1,4 @@
+install.packages("testthat")
 require(testthat)
 
 test_that("makefilename",{
