@@ -1,0 +1,27 @@
+---
+title: "general description"
+author: "Seefried"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{general description}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## general information
+
+This package is used to deal with data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## package functions
+
+- fars_read:  This is a function that loads a csv file and returns it as tibble.
+- make_filename: This is a function that creates form the year argument a filename the corresponding accident csv. 
+- fars_read_years: This is a function that loads the columns MONTH of the accident data for all specified years (specified using the years argument) and returns a list.
+- fars_summarize_years: This is a function summarizes the number of accidents for every month of all selected years (using the years argument) and returns tibble with the columns MONTH and for every year in years a column with the number of accidents.
+- fars_map_state: This function plot a map where all accidents for the specified states (state.num)  and the specified year are mapped, dependent on a csv file where these data are stored.
+
+
+## usage
+
+You can use the package to deal with the data of the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System. Here you are able to get the information of the corresponding years and/or show them vissualy on a plot. Therefore the package may help you to speed up your analysis

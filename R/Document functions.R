@@ -1,4 +1,4 @@
-#' Print "fars_read" 
+#' "fars_read" 
 #'
 #' This is a function that loads a csv file (specified using the \code{filename} argument) and returns it as tibble.
 #'
@@ -24,7 +24,7 @@ fars_read <- function(filename) {
   dplyr::tbl_df(data)
 }
 
-#' Print "make_filename" 
+#' "make_filename" 
 #'
 #' This is a function that creates form the \code{year} argument a filename the corresponding accident csv.
 #'
@@ -45,7 +45,7 @@ make_filename <- function(year) {
   sprintf("accident_%d.csv.bz2", year)
 }
 
-#' Print "fars_read_years" 
+#' "fars_read_years" 
 #'
 #' This is a function that loads the columns MONTH of the accident data for all specified years (specified using the \code{years} argument) and returns a list.
 #'
@@ -77,12 +77,12 @@ fars_read_years <- function(years) {
   })
 }
 
-#' Print "fars_summarize_years" 
+#' "" 
 #'
 #' This is a function summarizes the number of accidents for every month of all selected years (using the \code{years} argument) and returns tibble with the columns MONTH and for every year in \code{years} a column with the number of accidents.
 #'
 #' @param years a numeric vector, representing the years for which the accident_data should be summarized.
-#' 
+#' fars_summarize_years
 #' @return This function returns a tibble which contains in the first collumn the month and in the following columns for every year in \code{years} the number of accidents. for all the years specified in the \code{years} argument. Every entry of the list is a data.frame with the columns year and MONTH.
 #'
 #' @details This function is a wrapper for the \link{fars_read_years} function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::group_by}, \link{dplyr::bind_rows},
