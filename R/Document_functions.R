@@ -8,7 +8,7 @@ require(testthat)
 #' 
 #' @return This function returns a tibble with the contents of the csv. file 
 #'
-#' @details This function is a wrapper for the \link{readr::read_csv} and \link{dplyr::tbl_df} functions. Therefore
+#' @details This function is a wrapper for the \code{\link{readr::read_csv}} and \code{\link{dplyr::tbl_df}} functions. Therefore
 #'          the dplyr and readr package has to be installed and loaded.
 #'
 #' @note If the \code{filename} argument does not represent a file an error occurs.
@@ -55,7 +55,7 @@ make_filename <- function(year) {
 #' 
 #' @return This function returns list for all the years specified in the \code{years} argument. Every entry of the list is a data.frame with the columns year and MONTH.
 #'
-#' @details This function combines the fars_read and make_filename function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::tbl_df} and \link{readr::read_csv} are included.
+#' @details This function combines the fars_read and make_filename function. The external functions \code{\link{dplyr::mutate}}, \code{\link{dplyr::select}}, \code{\link{dplyr::tbl_df}} and \code{\link{readr::read_csv}} are included.
 #'          Therefore the dplyr and readr package has to be installed and loaded.
 #' 
 #' @note If for an element of the \code{years} argument no file is found a warning occurs.
@@ -87,8 +87,8 @@ fars_read_years <- function(years) {
 #' fars_summarize_years
 #' @return This function returns a tibble which contains in the first collumn the month and in the following columns for every year in \code{years} the number of accidents. for all the years specified in the \code{years} argument. Every entry of the list is a data.frame with the columns year and MONTH.
 #'
-#' @details This function is a wrapper for the fars_read_years function. The external functions \link{dplyr::mutate}, \link{dplyr::select}, \link{dplyr::group_by}, \link{dplyr::bind_rows},
-#'           \link{dplyr::summarize}, \link{tidyr::spread} \link{dplyr::tbl_df} and \link{readr::read_csv} are included.
+#' @details This function is a wrapper for the fars_read_years function. The external functions \code{\link{dplyr::mutate}}, \code{\link{dplyr::select}}, \code{\link{dplyr::group_by}}, \code{\link{dplyr::bind_rows}},
+#'           \code{\link{dplyr::summarize}}, \code{\link{tidyr::spread}} \code{\link{dplyr::tbl_df}} and \code{\link{readr::read_csv}} are included.
 #'          Therefore the dplyr , tidyr and readr package has to be installed and loaded.
 #' 
 #' @note If for an element of the \code{years} argument no corresponding file is found a warning occurs.
@@ -116,7 +116,7 @@ fars_summarize_years <- function(years) {
 #' 
 #' @return This function has no return value. It generates a plot with all accidents of the corresponding year and state.
 #'
-#' @details This function incluede the \link{readr::read_csv}, \link{dplyr::tbl_df}, \link{dplyr::filter} and \link{maps::map}  functions.
+#' @details This function incluede the \code{\link{readr::read_csv}}, \code{\link{dplyr::tbl_df}}, \code{\link{dplyr::filter}} and \code{\link{maps::map}}  functions.
 #'          Therefore the dplyr, maps and readr package has to be installed and loaded.
 #'
 #' @note If for the year no file exists an error occurs. If the state specifyed with \code{state.num} does not exist in the data an error occors. 
