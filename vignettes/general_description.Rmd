@@ -4,8 +4,8 @@ author: "Seefried"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
+  %\VignetteEngine{knitr::knitr}
   %\VignetteIndexEntry{general description}
-  %\VignetteEngine{knitr::render_markdown}
   %\VignetteEncoding{UTF-8}
 ---
 
