@@ -17,10 +17,6 @@ This function has no return value. It generates a plot with all accidents of the
 \description{
 This function plot a map where all accidents for the specified states (\code{state.num})  and the specified \code{year} are mapped, dependent on a csv file where these data are stored.
 }
-\details{
-This function incluede the \code{\link{readr::read_csv}}, \code{\link{dplyr::tbl_df}}, \code{\link{dplyr::filter}} and \code{\link{maps::map}}  functions.
-         Therefore the dplyr, maps and readr package has to be installed and loaded.
-}
 \note{
 If for the year no file exists an error occurs. If the state specifyed with \code{state.num} does not exist in the data an error occors. 
       If no coordinates exists for any of the accidents an error occurs.
@@ -29,4 +25,8 @@ If for the year no file exists an error occurs. If the state specifyed with \cod
 \dontrun{fars_map_state(01 , 2013)}
 \dontrun{fars_map_state(01 , 2014)}
 \dontrun{fars_map_state(02 , 2014)}
+}
+\seealso{
+This function incluede the \code{\link{readr::read_csv}}, \code{\link{dplyr::tbl_df}}, \code{\link{dplyr::filter}} and \code{\link{maps::map}}  functions.
+         Therefore the dplyr, maps and readr package has to be installed and loaded.
 }
