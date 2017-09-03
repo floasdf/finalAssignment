@@ -15,14 +15,14 @@ This function returns a tibble with the contents of the csv. file
 \description{
 This is a function that loads a csv file (specified using the \code{filename} argument) and returns it as tibble.
 }
+\details{
+This function is a wrapper for the \code{\link[readr]{read_csv}} and \code{\link[dplyr]{tbl_df}} functions. Therefore
+         the dplyr and readr package has to be installed and loaded.
+}
 \note{
 If the \code{filename} argument does not represent a file an error occurs.
 }
 \examples{
 \dontrun{ mydata <- fars_read("accident_2013.csv")}
 \dontrun{myData <- fars_read("accident_2014.csv")}
-}
-\seealso{
-This function is a wrapper for the \code{\link{readr::read_csv}} and \code{\link{dplyr::tbl_df}} functions. Therefore
-         the dplyr and readr package has to be installed and loaded.
 }

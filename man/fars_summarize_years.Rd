@@ -16,6 +16,11 @@ This function returns a tibble which contains in the first collumn the month and
 \description{
 This is a function summarizes the number of accidents for every month of all selected years (using the \code{years} argument) and returns tibble with the columns MONTH and for every year in \code{years} a column with the number of accidents.
 }
+\details{
+This function is a wrapper for the fars_read_years function. The external functions \code{\link[dplyr]{mutate}}, \code{\link[dplyr]{select}}, \code{\link[dplyr]{group_by}}, \code{\link[dplyr]{bind_rows}},
+          \code{\link[dplyr]{summarize}}, \code{\link[tidyr]{spread}} \code{\link[dplyr]{tbl_df}} and \code{\link[readr]{read_csv}} are included.
+         Therefore the dplyr , tidyr and readr package has to be installed and loaded.
+}
 \note{
 If for an element of the \code{years} argument no corresponding file is found a warning occurs.
 }
@@ -23,9 +28,4 @@ If for an element of the \code{years} argument no corresponding file is found a 
 \dontrun{fars_summarize_years(2013)}
 \dontrun{fars_summarize_years(c(2013,2014))}
 
-}
-\seealso{
-This function is a wrapper for the fars_read_years function. The external functions \code{\link{dplyr::mutate}}, \code{\link{dplyr::select}}, \code{\link{dplyr::group_by}}, \code{\link{dplyr::bind_rows}},
-          \code{\link{dplyr::summarize}}, \code{\link{tidyr::spread}} \code{\link{dplyr::tbl_df}} and \code{\link{readr::read_csv}} are included.
-         Therefore the dplyr , tidyr and readr package has to be installed and loaded.
 }

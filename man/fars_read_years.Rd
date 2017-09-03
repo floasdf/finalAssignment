@@ -15,14 +15,14 @@ This function returns list for all the years specified in the \code{years} argum
 \description{
 This is a function that loads the columns MONTH of the accident data for all specified years (specified using the \code{years} argument) and returns a list.
 }
+\details{
+This function combines the fars_read and make_filename function. The external functions \code{\link[dplyr]{mutate}}, \code{\link[dplyr]{select}}, \code{\link[dplyr]{tbl_df}} and \code{\link[readr]{read_csv}} are included.
+         Therefore the dplyr and readr package has to be installed and loaded.
+}
 \note{
 If for an element of the \code{years} argument no file is found a warning occurs.
 }
 \examples{
 \dontrun{myData <- fars_read_years(c(2013,2014))}
 \dontrun{myData <- fars_read_years(2014)}
-}
-\seealso{
-This function combines the fars_read and make_filename function. The external functions \code{\link{dplyr::mutate}}, \code{\link{dplyr::select}}, \code{\link{dplyr::tbl_df}} and \code{\link{readr::read_csv}} are included.
-         Therefore the dplyr and readr package has to be installed and loaded.
 }
