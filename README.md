@@ -12,10 +12,7 @@ You can install finalAssignment from github with:
 devtools::install_github("floasdf/finalAssignment")
 ```
 
-## Example
+## Travis badge
 
-This is a basic example which shows you how to solve a common problem:
+[![Build Status](https://travis-ci.org/floasdf/finalAssignment.svg?branch=master)](https://travis-ci.org/floasdf/finalAssignment)
 
-``` r
-## basic example code
-```
